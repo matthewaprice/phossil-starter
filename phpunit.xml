@@ -21,9 +21,9 @@
     </testsuites>
     <source>
         <include>
-            <directory>phossil/components</directory>
-            <directory>phossil/controllers</directory>
-            <directory>phossil/views</directory>
+            <directory>app/components</directory>
+            <directory>app/controllers</directory>
+            <directory>app/views</directory>
         </include>
     </source>
 </phpunit>
