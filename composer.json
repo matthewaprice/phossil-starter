@@ -1,0 +1,47 @@
+{
+    "name": "matthewaprice/phossil-starter",
+    "description": "Starter site for phossil: routes, typed views and components that build to plain static HTML.",
+    "type": "project",
+    "homepage": "https://phossil.dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthew Price",
+            "email": "matthew@matthewaprice.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "../phossil"
+        }
+    ],
+    "require": {
+        "php": ">=8.4",
+        "matthewaprice/phossil": "dev-feature/composer-package-creation as 0.1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^13.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Components\\": "phossil/components/",
+            "App\\Controllers\\": "phossil/controllers/",
+            "App\\Data\\": "phossil/data/",
+            "App\\Views\\": "phossil/views/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "build": "pnpm build && docker compose exec php php phossil/includes/build.php && pnpm format:build",
+        "build:zip": [
+            "@build",
+            "rm -f dist.zip && cd dist && zip -rq ../dist.zip . -x '.*' '*/.*'"
+        ],
+        "test": "docker compose exec php vendor/bin/phpunit"
+    }
+}
