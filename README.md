@@ -28,6 +28,7 @@ Open http://localhost:8000.
 - `phossil/` is your site: routes in `routes/web.php`, views, controllers, data, the `Layout` around every page, and the CSS, JS and images.
 - `tests/` holds PHPUnit tests for the views and controllers.
 - The routing, components and build come from the `matthewaprice/phossil` package in `vendor/`.
+- `.claude/` holds an optional pull request skill for [Claude Code](https://claude.com/claude-code): run `/pull-request` on a branch to check it and write its PR description. Delete the folder if you don't use Claude Code.
 
 ## Build
 
