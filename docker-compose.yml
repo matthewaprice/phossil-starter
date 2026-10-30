@@ -1,4 +1,4 @@
-name: phossil-starter
+name: phossil
 
 services:
   # Renders the pages. nginx hands it every request that is not an asset.
