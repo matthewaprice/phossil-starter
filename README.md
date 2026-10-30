@@ -21,6 +21,8 @@ pnpm install       # Vite, Tailwind, oxfmt and oxlint
 docker compose up --build
 ```
 
+`create-project` asks whether to start a git repository with a first commit. Answer `n` to skip it.
+
 Open http://localhost:8000.
 
 ## What's here

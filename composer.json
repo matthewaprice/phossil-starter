@@ -37,6 +37,9 @@
         }
     },
     "scripts": {
+        "post-create-project-cmd": [
+            "Phossil\\Composer\\CreateProject::offerGitInit"
+        ],
         "build": "pnpm build && docker compose exec php php app/includes/build.php && pnpm format:build",
         "build:zip": [
             "@build",
