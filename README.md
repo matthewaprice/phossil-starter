@@ -1,6 +1,6 @@
 # phossil starter
 
-A new site for [phossil](https://github.com/matthewaprice/phossil), the small PHP site kit with routing and typed components that builds to plain static HTML, ready for AWS Amplify or any static host.
+A new site for [phossil](https://github.com/matthewaprice/phossil), the PHP site kit with routing and typed components that builds to plain static HTML, ready for AWS Amplify or any static host.
 
 You get routes, typed views and components while you build, and a folder of static files when you deploy.
 
@@ -21,7 +21,7 @@ pnpm install       # Vite, Tailwind, oxfmt and oxlint
 docker compose up --build
 ```
 
-`create-project` asks whether to start a git repository with a first commit. Answer `n` to skip it.
+`create-project` asks whether to start a git repository with a first commit, and what to call its default branch (press Enter for `main`). Answer `n` to the first question to skip it.
 
 Open http://localhost:8000.
 
