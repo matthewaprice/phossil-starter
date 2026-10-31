@@ -10,12 +10,6 @@
             "email": "matthew@matthewaprice.com"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "../phossil"
-        }
-    ],
     "require": {
         "php": ">=8.4",
         "matthewaprice/phossil": "^0.1"
