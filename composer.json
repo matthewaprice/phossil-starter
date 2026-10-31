@@ -18,7 +18,7 @@
     ],
     "require": {
         "php": ">=8.4",
-        "matthewaprice/phossil": "dev-main as 0.1.0"
+        "matthewaprice/phossil": "^0.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^13.4"
